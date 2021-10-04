@@ -13,44 +13,19 @@ public class Main {
         int input = sc.nextInt();
 
         switch (input) {
-            case 1:
-                System.out.println("Leden");
-                break;
-            case 2:
-                System.out.println("Únor");
-                break;
-            case 3:
-                System.out.println("Březen");
-                break;
-            case 4:
-                System.out.println("Duben");
-                break;
-            case 5:
-                System.out.println("Květen");
-                break;
-            case 6:
-                System.out.println("Červen");
-                break;
-            case 7:
-                System.out.println("Červenec");
-                break;
-            case 8:
-                System.out.println("Srpen");
-                break;
-            case 9:
-                System.out.println("Září");
-                break;
-            case 10:
-                System.out.println("Říjen");
-                break;
-            case 11:
-                System.out.println("Listopad");
-                break;
-            case 12:
-                System.out.println("Prosinec");
-                break;
-            default:
-                System.out.println("Neplatná hodnota");
+            case 1 -> System.out.println("Leden");
+            case 2 -> System.out.println("Únor");
+            case 3 -> System.out.println("Březen");
+            case 4 -> System.out.println("Duben");
+            case 5 -> System.out.println("Květen");
+            case 6 -> System.out.println("Červen");
+            case 7 -> System.out.println("Červenec");
+            case 8 -> System.out.println("Srpen");
+            case 9 -> System.out.println("Září");
+            case 10 -> System.out.println("Říjen");
+            case 11 -> System.out.println("Listopad");
+            case 12 -> System.out.println("Prosinec");
+            default -> System.out.println("Neplatná hodnota");
         }
 
         // 2. Vypočet faktoriálu vámi zadaného čísla. Výsledek vypiště. - Řeště pomocí 'for' cyklu
