@@ -73,17 +73,21 @@ public class Main {
             delenec -= delitel;
         }
         System.out.println("Výsledek dělení: " + result);
+        System.out.println("Zbytek: " + delenec);
 
         // 4. Najdětě největšího společného dělitele dvou čísel - pomocí 'do while' cyklu
         System.out.print("Zadejte první číslo: ");
         int firstN = sc.nextInt();
         System.out.print("Zadejte druhé číslo: ");
         int secondN = sc.nextInt();
-        int div = firstN < secondN ? secondN : firstN;
-        div += 1;
-        do {
-            div--;
-        } while (firstN % div != 0 || secondN % div != 0);
+        int div = firstN > secondN ? secondN : firstN;
+
+        if (secondN % firstN != 0 && firstN % secondN != 0) {
+            // div = div ^ (1 / 2); cuts out a lot of numbers, but isn't really suited for 'do while'
+            do {
+                div--;
+            } while (firstN % div != 0 || secondN % div != 0);
+        }
         System.out.println("Největší společný dělitel je: " + div);
     }
 }
